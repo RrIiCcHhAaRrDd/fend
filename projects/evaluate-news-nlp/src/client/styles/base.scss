@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ADD8E6;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    width: 800px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    
+
+}
+
+h2 {
+    font-weight: bold;
+    margin-left: 50%;
+    margin-right: 50%;
+    padding-bottom: 30px;
+    width:100px;
+}
+
