@@ -3,6 +3,7 @@ import { polarity } from './js/changePolarity'
 import { postData } from './js/postRequest'
 import { getAPIfn } from './js/getAPI'
 import { updateUIfn } from './js/updateUI'
+import { toggleFieldfn } from './js/toggleField'
 
 
 import './styles/resets.scss'
@@ -21,6 +22,8 @@ export {
     polarity,
     postData,
     getAPIfn,
-    updateUIfn
+    updateUIfn,
+    toggleFieldfn
+    
 
 }

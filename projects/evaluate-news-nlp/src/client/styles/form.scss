@@ -6,16 +6,31 @@ form {
     min-width: 70%;
     background-color: bisque; 
 
+    h3{
+        display: block;
+    }
+
 }
 
-input {
+
+[type=text]{
     padding: 10px 20px 8px 10px;
-    width: 100%;
+    width: 90%;
     line-height: 16px;
     margin: 10px 0;
     border-radius: 10px;
     border:1px solid black;
     box-shadow: 2px 2px grey;
+    display: inline-block;
+}
+
+
+
+[type=radio] {
+    display:inline-block;
+    width: fit-content;
+    margin: 5px 10px 5px 10px;
+    
 }
 
 [type=submit] {
@@ -23,6 +38,9 @@ input {
     display: block;
     background-color: white;
     color: rgb(57, 51, 51);
+    border-radius: 10px;
+    margin: 5px 40%;
+    padding: 5px;
 
     &:hover{
         box-shadow: 3px 3px rgba(55, 54, 54, 0.627);
@@ -44,12 +62,13 @@ input {
 
 
 #results_div {
-    position: absolute;
+    position: inherit;
     padding:30px;
     box-shadow: 2px 2px grey;
     border-radius: 25px;
     width:800px;
     height:360px;
+    margin-bottom: 10px;
     background-color: bisque;
 }
 

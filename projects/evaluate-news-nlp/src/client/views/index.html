@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -21,12 +21,13 @@
     <main>
         <section>
             <form class="" onsubmit="return Client.handleSubmit(event)">
-                Enter your text from the news source here:
+
+                <h3>Enter your text from the news source here:</h3>
+                <input type="radio" id="quoteRadio" name="radio" onclick="return Client.toggleFieldfn()" checked>
                 <input id="quote" type="text" value="" placeholder="Text from source" name="quote">
-                <label for="lang">Choose a language for source text:</label>
-                <select id="lang" type="" name="lang">
-                    <option value="en">English</option>
-                </select>
+                <h3>Or alternatively enter URL of site:</h3>
+                <input type="radio" id="urlRadio" name="radio" onclick="return Client.toggleFieldfn()">
+                <input id="url" type="text" value="" placeholder="URL of site" name="website" disabled>
                 <input type="submit" name="" value="Submit For Analysis" onclick="return Client.handleSubmit(event)"
                     onsubmit="return Client.handleSubmit(event)">
             </form>
@@ -52,15 +53,15 @@
         <p>This is a footer</p>
     </footer>
 
-    </body>
-    <script>
+</body>
+<script>
         // Check that service workers are supported
-        if ('serviceWorker' in navigator) {
-            // Use the window load event to keep the page load performant
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
-            });
-        }
-       </script>
-    
+    /*  if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }*/
+</script>
+
 </html>
